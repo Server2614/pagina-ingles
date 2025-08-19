@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Flatory Slab Condensed';
+    src: url('FlatorySlabCondensed.ttf');
+}
+
+body {
+    font-family: sans-serif;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://i.postimg.cc/CxVTyNMQ/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    align-items: center;
+}
+
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: #c914c0;
+    font-family: 'Flatory Slab Condensed', sans-serif;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: "center";
+}
+
+.juego {
+    margin-top: 40px;
+    padding: 20px;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(207, 14, 14, 0.6);
+    align-items: "center";
+}
+
+a.boton-juego,
+button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #38eb71;
+    color: rgb(1, 1, 1);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+a.boton-juego:hover,
+button:hover {
+    background-color: #d8df0f91;
+    transform: scale(1.05);
+}
+
+iframe {
+    width: 100%;
+    max-width: 795px;
+    height: 690px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(228, 38, 193, 0.2);
+}
+
+.valoracion-caritas {
+    text-align: center;
+    margin-top: 40px;
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.carita {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 32px;
+    transition: transform 0.2s;
+}
+
+.carita:hover {
+    transform: scale(1.2);
+}
+
+.carita.selected {
+    transform: scale(1.3);
+    border-bottom: 2px solid #1daf68;
+}
+
+.nombre-carita {
+    font-size: 14px;
+    color: white;
+    margin-top: 5px;
+}
+
+.puntaje-juego {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.puntaje-juego input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 80px;
+}
+
+#juego6-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espacio entre juego y botón */
+    margin-top: 20px;
+}
+
+#botonMusica {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+/*top bar*/
+
+css menu .top-bar {
+  background-color: #fefefe;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  gap: 10px;
+}
+
+.logo-container img {
+  height: 50px;
+}
+
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul.menu>li {
+  position: relative;
+}
+
+.main-nav ul.menu>li>a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 12px 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul.menu>li>a:hover {
+  color: #f34750;
+}
+
+.has-dropdown:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  min-width: 500px;
+  z-index: 999;
+}
+
+.mega-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-column h4 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #f34750;
+}
+
+.mega-column a {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.mega-column a:hover {
+  color: #a479bd;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #003d6a;
+}
+
+.hero-logo-container {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 8px;
+  border-radius: 10px;
+
+}
+
+.hero-logo {
+  height: 100px;
+  width: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* CONTENEDOR DE LOGO + CARD */
+.card-content-with-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-dove-left {
+  flex: 0 0 40%;
+  max-width: 450px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo-dove-left img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 80%;
+
+  border-radius: 12px;
+}
